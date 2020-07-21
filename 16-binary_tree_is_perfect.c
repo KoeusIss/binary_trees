@@ -2,7 +2,7 @@
 int find_depth(const binary_tree_t *tree)
 {
 	int depth = 0;
-	
+
 	while (!tree)
 	{
 		depth++;
