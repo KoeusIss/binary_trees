@@ -22,26 +22,22 @@ bst_t *bst_insert(bst_t **tree, int value)
 		if (value < current->n)
 		{
 			if (current->left)
-			{
 				current = current->left;
-				continue;
-			}
 			else
 			{
 				current->left = (binary_tree_node(current, value));
+				current = current->left;
 				break;
 			}
 		}
 		else if (value > current->n)
 		{
 			if (current->right)
-			{
 				current = current->right;
-				continue;
-			}
 			else
 			{
 				current->right = (binary_tree_node(current, value));
+				current = current->right;
 				break;
 			}
 		}
